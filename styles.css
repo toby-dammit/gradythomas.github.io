@@ -42,10 +42,14 @@ img {
   padding: 6px;
 }
 
-@media only screen and (max-width: 770px) {
+.grady2 {
+  height: 100px;
+}
+
+/* @media only screen and (max-width: 770px) {
   .photos-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-}
+} */
