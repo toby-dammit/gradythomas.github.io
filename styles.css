@@ -1,19 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
 body {
-    color: red;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
 }
 
- /* Animation */
-@keyframes colors {
-  0% {color: red;}
-  50% {color: yellow;}
-  100% {color: red;}
+.main {
+  display: flex;
+  flex-direction: row;
 }
 
-.grady {
-  width: 100px;
-  height: 100px;
-  color: red;
-  animation-name: colors;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-} 
+
+.side-menu-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.side-menu-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.photos-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  padding: 6px;
+}
+
+img {
+  width: 100%;
+  padding: 6px;
+}
+
+@media only screen and (max-width: 770px) {
+  .photos-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
